@@ -532,6 +532,9 @@ body {
   }
   .top-bar .contact-info .info p span {
     font-size: 11px;
+    color: #159eec !important;
+    text-decoration: none !important;
+    -webkit-text-decoration: none !important;
   }
   .nav-bar {
     justify-content: space-between;
@@ -636,18 +639,19 @@ body {
     text-align: start;
   }
   .reviews .review-carousel {
-    padding: 2rem;
+    padding: 1rem;
     box-sizing: border-box;
-    width: 380px;
+    width: 100vw;
   }
   .reviews .review-carousel .review p {
-    font-size: 14px;
+    font-size: 11px;
   }
   .reviews .review-carousel .review small {
     font-size: 20px;
   }
   .reviews .review-carousel .review span {
     font-weight: 600;
+    font-size: 15px;
   }
   .essentials .resource-links {
     display: grid;
@@ -665,6 +669,14 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
+  .contact .contact-info p {
+    text-decoration: none !important;
+    -webkit-text-decoration: none !important;
+    color: #1f2b6c !important;
+  }
+  .contact .contact-info p:hover {
+    color: white !important;
+  }
   .footer {
     padding: 2rem 0rem 2rem 2rem;
     align-items: flex-start;
@@ -675,6 +687,17 @@ body {
   .footer .first-section {
     flex-direction: column;
     gap: 2rem;
+  }
+  .footer .first-section .footer-links,
+  .footer .first-section .footer-contact,
+  .footer .first-section .about,
+  .footer .first-section .newsletter {
+    gap: 1rem;
+  }
+  .footer .first-section .footer-contact .contact-dir span {
+    text-decoration: none !important;
+    -webkit-text-decoration: none !important;
+    color: white !important;
   }
   .footer .line {
     width: 55%;

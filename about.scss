@@ -519,6 +519,9 @@ body {
           font-size: 12px;
           span {
             font-size: 11px;
+            color: #159eec !important;
+            text-decoration: none !important;
+            -webkit-text-decoration: none !important;
           }
         }
       }
@@ -641,18 +644,19 @@ body {
   }
   .reviews {
     .review-carousel {
-      padding: 2rem;
+      padding: 1rem;
       box-sizing: border-box;
-      width: 380px;
+      width: 100vw;
       .review {
         p {
-          font-size: 14px;
+          font-size: 11px;
         }
         small {
           font-size: 20px;
         }
         span {
           font-weight: 600;
+          font-size: 15px;
         }
       }
     }
@@ -675,6 +679,14 @@ body {
     .contact-info {
       display: grid;
       grid-template-columns: 1fr 1fr;
+      p {
+        text-decoration: none !important;
+        -webkit-text-decoration: none !important;
+        color: #1f2b6c !important;
+      }
+      p:hover {
+        color: white !important;
+      }
     }
   }
   .footer {
@@ -686,6 +698,21 @@ body {
     .first-section {
       flex-direction: column;
       gap: 2rem;
+      .footer-links,
+      .footer-contact,
+      .about,
+      .newsletter {
+        gap: 1rem;
+      }
+      .footer-contact {
+        .contact-dir {
+          span {
+            text-decoration: none !important;
+            -webkit-text-decoration: none !important;
+            color: white !important;
+          }
+        }
+      }
     }
     .line {
       width: 55%;

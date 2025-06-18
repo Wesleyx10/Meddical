@@ -72,6 +72,24 @@ body {
   top: 0;
   z-index: 999;
 }
+.nav-bar .bars {
+  display: none;
+}
+.nav-bar #logo {
+  text-decoration: none;
+  font-size: 30px;
+  font-weight: 700;
+  font-family: var(--logo-font);
+  display: none;
+}
+.nav-bar #logo::before {
+  content: "MED";
+  color: #bfd2f8;
+}
+.nav-bar #logo::after {
+  content: "DICAL";
+  color: white;
+}
 .nav-bar .links {
   display: flex;
   align-items: center;
@@ -383,4 +401,167 @@ h2 span {
   padding: 0.4rem 0.4rem;
   border: none;
   font-size: 10px;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 500px) {
+  .top-bar #logo {
+    display: none;
+  }
+  .top-bar .contact-info {
+    gap: 1rem;
+  }
+  .top-bar .contact-info .info i {
+    font-size: 20px;
+  }
+  .top-bar .contact-info .info p {
+    font-size: 12px;
+  }
+  .top-bar .contact-info .info p span {
+    font-size: 11px;
+    color: #159eec !important;
+    text-decoration: none !important;
+    -webkit-text-decoration: none !important;
+  }
+  .nav-bar {
+    justify-content: space-between;
+    padding: 1rem;
+  }
+  .nav-bar #logo {
+    display: block;
+  }
+  .nav-bar .bars {
+    display: block;
+    position: relative;
+    top: auto;
+    right: auto;
+    color: white;
+    font-size: 30px;
+    z-index: 1000;
+    cursor: pointer;
+  }
+  .nav-bar .bars .hamburger {
+    display: block;
+  }
+  .nav-bar .bars .close {
+    display: none;
+    font-size: 35px;
+    color: #1f2b6c;
+  }
+  .nav-bar .bars.close .hamburger {
+    display: none;
+  }
+  .nav-bar .bars.close .close {
+    display: block;
+  }
+  .nav-bar .links {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #bfd2f8;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    transform: translateY(-100%);
+    transition: transform 0.6s ease-in-out;
+  }
+  .nav-bar .links .navLink {
+    color: #1f2b6c;
+    font-size: 25px;
+    font-weight: 400;
+  }
+  .nav-bar .links .navLink.active {
+    font-weight: 700;
+    color: #1f2b6c;
+  }
+  .nav-bar .links.open {
+    transform: translateY(0);
+  }
+  .nav-bar #appointment {
+    position: fixed;
+    bottom: 4rem;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 23px;
+    background-color: #1f2b6c;
+    color: white;
+    padding: 0.7rem 4rem;
+    border-radius: 30px;
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+  }
+  .nav-bar #appointment.show {
+    opacity: 1;
+  }
+  .services-head {
+    padding: 6rem 5rem 5rem 1rem;
+    align-items: flex-start;
+    justify-content: flex-start;
+    background-position: bottom center;
+  }
+  .services-head h1 {
+    text-align: center;
+    font-size: 30px;
+  }
+  h2 span {
+    font-weight: 700;
+    width: 320px;
+    font-size: 18px;
+  }
+  .services-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 500px;
+  }
+  .services-content .service-offered img {
+    width: 300px;
+  }
+  .services-content .service-offered p {
+    width: 300px;
+  }
+  .contact .contact-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .contact .contact-info p {
+    text-decoration: none !important;
+    -webkit-text-decoration: none !important;
+    color: #1f2b6c !important;
+  }
+  .contact .contact-info p:hover {
+    color: white !important;
+  }
+  .footer {
+    padding: 2rem 0rem 2rem 2rem;
+    align-items: flex-start;
+    width: 100%;
+    overflow-x: hidden;
+    box-sizing: border-box;
+  }
+  .footer .first-section {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .footer .first-section .footer-links,
+  .footer .first-section .footer-contact,
+  .footer .first-section .about,
+  .footer .first-section .newsletter {
+    gap: 1rem;
+  }
+  .footer .first-section .footer-contact .contact-dir span {
+    text-decoration: none !important;
+    -webkit-text-decoration: none !important;
+    color: white !important;
+  }
+  .footer .line {
+    width: 55%;
+  }
+  .footer .last-section {
+    gap: 1rem;
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }/*# sourceMappingURL=services.css.map */

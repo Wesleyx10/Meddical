@@ -624,6 +624,9 @@ body {
   }
   .top-bar .contact-info .info p span {
     font-size: 11px;
+    color: #159eec !important;
+    text-decoration: none !important;
+    -webkit-text-decoration: none !important;
   }
   .nav-bar {
     justify-content: space-between;
@@ -770,6 +773,14 @@ body {
   .contact .contact-info {
     display: grid;
     grid-template-columns: 1fr 1fr;
+  }
+  .contact .contact-info p {
+    text-decoration: none !important;
+    -webkit-text-decoration: none !important;
+    color: #1f2b6c !important;
+  }
+  .contact .contact-info p:hover {
+    color: white !important;
   }
   .footer {
     padding: 2rem 0rem 2rem 2rem;

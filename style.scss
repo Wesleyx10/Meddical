@@ -607,6 +607,9 @@ body {
           font-size: 12px;
           span {
             font-size: 11px;
+            color: #159eec !important;
+            text-decoration: none !important;
+            -webkit-text-decoration: none !important;
           }
         }
       }
@@ -777,6 +780,14 @@ body {
     .contact-info {
       display: grid;
       grid-template-columns: 1fr 1fr;
+      p {
+        text-decoration: none !important;
+        -webkit-text-decoration: none !important;
+        color: #1f2b6c !important;
+      }
+      p:hover {
+        color: white !important;
+      }
     }
   }
   .footer {
