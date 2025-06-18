@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="appointment.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Yeseva+One&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="top-bar">
+      <a id="logo" href="index.html"></a>
+      <div class="contact-info">
+        <div class="info">
+          <i class="fa-solid fa-phone-volume"></i>
+          <p>EMERGENCY <span>(237) 681-812-255</span></p>
+        </div>
+        <div class="info">
+          <i class="fa-regular fa-clock"></i>
+          <p>WORK HOUR <span>09:00 - 20:00 Everyday</span></p>
+        </div>
+        <div class="info">
+          <i class="fa-solid fa-location-dot"></i>
+          <p>LOCATION <span>3501 US Hwy 190</span></p>
+        </div>
+      </div>
+    </div>
+    <div class="nav-bar">
+      <div class="links">
+        <a class="navLink" href="index.html">Home</a>
+        <a class="navLink" href="about.html">About Us</a>
+        <a class="navLink" href="services.html">Services</a>
+        <a class="navLink" href="doc.html">Doctors</a>
+        <a class="navLink" href="news.html">News</a>
+        <a class="navLink" href="contact.html">Contact</a>
+      </div>
+      <a href="appointment.html" id="appointment">Appointment</a>
+    </div>
+    <div class="hero-div">
+      <div class="back-link">
+        <a href="index.html">Home</a>
+        <span>> Appointment</span>
+      </div>
+      <h1>Book An Appointment</h1>
+    </div>
+    <div class="header-text">
+      <h1>BOOK APPOINTMENT</h1>
+      <p>
+        Your health is our priority. Schedule your appointment with our
+        experienced medical team at a time that works for you. We've made
+        booking simple so you can focus on your wellbeing.
+      </p>
+    </div>
+    <div class="schedule-hours">
+      <h1>Schedule Hours</h1>
+      <div class="hours">
+        <p>Monday</p>
+        <small>—</small>
+        <span>09:00 AM - 07:00 PM</span>
+      </div>
+      <div class="hours">
+        <p>Tuesday</p>
+        <small>—</small>
+        <span>09:00 AM - 07:00 PM</span>
+      </div>
+      <div class="hours">
+        <p>Wednesday</p>
+        <small>—</small>
+        <span>09:00 AM - 07:00 PM</span>
+      </div>
+      <div class="hours">
+        <p>Thursday</p>
+        <small>—</small>
+        <span>09:00 AM - 07:00 PM</span>
+      </div>
+      <div class="hours">
+        <p>Friday</p>
+        <small>—</small>
+        <span>09:00 AM - 07:00 PM</span>
+      </div>
+      <div class="hours">
+        <p>Saturday</p>
+        <small>—</small>
+        <span>09:00 AM - 07:00 PM</span>
+      </div>
+      <div class="hours">
+        <p>Sunday</p>
+        <small>—</small>
+        <span>Closed</span>
+      </div>
+      <div class="line"></div>
+      <div class="emergency-no">
+        <i class="fa-solid fa-phone-volume"></i>
+        <p>EMERGENCY <span>(237) 681-812-255</span></p>
+      </div>
+    </div>
+    <h1 class="booking-head">Healthcare Booking</h1>
+    <div class="booking-form">
+      <input placeholder="Name" id="appt-name" type="text" />
+      <input placeholder="Email" id="appt-email" type="email" />
+      <input placeholder="Phone" type="text" id="phone" />
+      <select required name="gender" id="gender">
+        <option disabled selected hidden value="">Gender</option>
+        <option value="Male(M)">Male(M)</option>
+        <option value="Female(F)">Female(F)</option>
+      </select>
+      <input placeholder="Date" id="date" type="date" />
+      <input placeholder="Time" id="time" type="time" />
+      <select required name="doctor" id="doctor">
+        <option disabled selected hidden value="">Doctor</option>
+        <option value="Dr. Emeka Okafor">Dr. Emeka Okafor</option>
+        <option value="Dr. James Osarugue">Dr. James Osarugue</option>
+        <option value="Dr. Phil Johnson">Dr. Phil Johnson</option>
+        <option value="Dr. Philomena Edith">Dr. Philomena Edith</option>
+        <option value="Dr. Cole Rogers">Dr. Cole Rogers</option>
+        <option value="Dr. Lauren Kerr">Dr. Lauren Kerr</option>
+        <option value="Dr. Samuel Idemudia">Dr. Samuel Idemudia</option>
+        <option value="Dr. Joan Aigbe">Dr. Joan Aigbe</option>
+      </select>
+      <select required name="dept" id="dept">
+        <option disabled selected hidden value="">Department</option>
+        <option value="Orthopedics">Orthopedics</option>
+        <option value="Mental Health">Mental Health</option>
+        <option value="Women's Health">Women's Health</option>
+        <option value="Pediatrics">Pediatrics</option>
+        <option value="Diagnostic Imaging">Diagnostic Imaging</option>
+        <option value="Emergency Care">Emergency Care</option>
+        <option value="Preventive Care">Preventive Care</option>
+        <option value="Cardiology">Cardiology</option>
+      </select>
+      <textarea
+        placeholder="Additional Message Or Special Requirements"
+        name="message"
+        id="appt-message"
+      ></textarea>
+      <button id="submit-appt">BOOK</button>
+    </div>
+    <div class="other-content">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3437.8531089405105!2d-92.3860674!3d30.4969073!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8624b5fc8496b305%3A0x652f3c6d3f949d30!2s3501%20US-190%2C%20Eunice%2C%20LA%2070535%2C%20USA!5e0!3m2!1sen!2sng!4v1749830451478!5m2!1sen!2sng"
+        width="600"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+      <div class="contact">
+        <div class="contact-head">
+          <h1>GET IN TOUCH</h1>
+          <span>Contact</span>
+        </div>
+        <div class="contact-info">
+          <p>
+            <i class="fa-solid fa-phone-volume"></i> <span>EMERGENCY</span>
+            <small>(237) 681-812-255</small>
+            <small>(237) 681-855-290</small>
+          </p>
+          <p>
+            <i class="fa-solid fa-location-dot"></i> <span>LOCATION</span>
+            <small>3501 US Hwy 190</small>
+            <small>Eunice, LA 70535, USA </small>
+          </p>
+          <p>
+            <i class="fa-solid fa-envelope"></i><span>EMAIL</span>
+            <small>Meddical@gmail.com</small>
+            <small>Meddical@yahoo.com</small>
+          </p>
+          <p>
+            <i class="fa-regular fa-clock"></i> <span>WORKING HOURS</span>
+            <small>Mon-Sat 09:00-20:00</small>
+            <small>Sunday Emergency Only</small>
+          </p>
+        </div>
+      </div>
+      <div class="footer">
+        <div class="first-section">
+          <div class="about">
+            <h1>MEDDICAL</h1>
+            <span
+              >Meddical provides trusted<br />
+              healthcare with compassion<br />
+              and excellence.</span
+            >
+          </div>
+          <div class="footer-links">
+            <h1>Important Links</h1>
+            <div class="link-dir">
+              <a href="appointment.html">Appointments</a>
+              <a href="doc.html">Doctors</a>
+              <a href="services.html">Services</a>
+              <a href="about.html">About Us</a>
+            </div>
+          </div>
+          <div class="footer-contact">
+            <h1>Contact Us</h1>
+            <div class="contact-dir">
+              <span>Call: (237) 681-812-255</span>
+              <span>Email: Meddical@gmail.com</span>
+              <span>Address: 3501 US Hwy 190</span>
+              <span>Eunice, LA 70535, USA</span>
+            </div>
+          </div>
+          <div class="newsletter">
+            <h1>Newsletter</h1>
+            <div class="input-dir">
+              <input
+                id="newsletter-input"
+                placeholder="Enter Your Email Address"
+                type="email"
+              />
+              <button id="newsletter-btn">
+                <i class="fa-solid fa-paper-plane"></i>
+              </button>
+            </div>
+            <h2 id="thanksMsg">You're now subscribed to our health updates!</h2>
+          </div>
+        </div>
+        <div class="line"></div>
+        <div class="last-section">
+          <span>© 2025 Meddical All Rights Reserved by PNTEC-LTD</span>
+          <div class="socials">
+            <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+            <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <h3 class="appt-msg">
+      You’re all set! We’ll be ready to assist you at your scheduled time.
+    </h3>
+    <script type="module" src="contact.js"></script>
+  </body>
+</html>

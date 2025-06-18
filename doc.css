@@ -1,0 +1,503 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --logo-font: yeseva one;
+  --main-font: poppins;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  font-family: var(--main-font);
+}
+
+.top-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 1rem;
+  gap: 4rem;
+}
+.top-bar #logo {
+  text-decoration: none;
+  font-size: 30px;
+  font-weight: 700;
+  font-family: var(--logo-font);
+}
+.top-bar #logo::before {
+  content: "MED";
+  color: black;
+}
+.top-bar #logo::after {
+  content: "DICAL";
+  color: #159eec;
+}
+.top-bar .contact-info {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+.top-bar .contact-info .info {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+}
+.top-bar .contact-info .info i {
+  font-size: 24px;
+  color: #159eec;
+  font-weight: 600;
+}
+.top-bar .contact-info .info p {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: 13px;
+}
+.top-bar .contact-info .info p span {
+  color: #159eec;
+  font-size: 12px;
+}
+
+.nav-bar {
+  background-color: #1f2b6c;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0.8rem;
+  gap: 7rem;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+.nav-bar .links {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+.nav-bar .links .navLink {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 300;
+}
+.nav-bar .links .navLink.active {
+  color: #bfd2f8;
+}
+.nav-bar #appointment {
+  color: #1f2b6c;
+  background-color: #bfd2f8;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background-image: url(images/medium-shot-scientists-posing-together.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 7rem 7rem 7rem 9.4rem;
+}
+.hero-section .back-link {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+.hero-section .back-link a {
+  color: #bfd2f8;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+.hero-section .back-link a:hover {
+  color: #1f2b6c;
+}
+.hero-section .back-link span {
+  color: #bfd2f8;
+}
+.hero-section h1 {
+  font-family: var(--logo-font);
+  font-size: 50px;
+  font-weight: 500;
+  color: #1f2b6c;
+}
+
+.doc-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+  gap: 3rem;
+}
+.doc-content h1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  color: #159eec;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  font-weight: 600;
+}
+.doc-content h1 span {
+  color: #1f2b6c;
+  font-family: var(--logo-font);
+  font-size: 33px;
+  font-weight: 400;
+}
+.doc-content h1 p {
+  font-size: 16px;
+  color: black;
+  font-weight: 400;
+  text-align: center;
+  width: 600px;
+}
+.doc-content .doctors {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  margin: auto;
+  justify-content: center;
+  gap: 2rem;
+}
+.doc-content .doctors .doc {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: center;
+  background-color: #bfd2f8;
+  border-radius: 5px;
+}
+.doc-content .doctors .doc img {
+  width: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 350px;
+  border-radius: 5px 5px 0px 0px;
+}
+.doc-content .doctors .doc span {
+  color: #1f2b6c;
+  font-size: 19px;
+  margin-top: 0.7rem;
+}
+.doc-content .doctors .doc strong {
+  font-size: 20px;
+  font-weight: 600;
+  color: #1f2b6c;
+}
+.doc-content .doctors .doc .doc-link {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.doc-content .doctors .doc .doc-link a {
+  color: #1f2b6c;
+  text-decoration: none;
+  font-size: 18px;
+  pointer-events: none;
+}
+.doc-content .doctors .doc .appointment-link {
+  background-color: #1f2b6c;
+  width: 100%;
+  text-align: center;
+  padding: 0.8rem 0rem;
+  border-radius: 0px 0px 5px 5px;
+  text-decoration: none;
+  color: #bfd2f8;
+  font-weight: 300;
+}
+.doc-content .doctors .doc .appointment-link:hover {
+  text-decoration: underline;
+}
+
+.reviews {
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+.reviews h1 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #159eec;
+}
+.reviews .review-carousel {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(rgba(75, 85, 150, 0.7), rgba(75, 85, 150, 0.7)), url(images/smiling-black-doctor-with-papers.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 3rem 5.7rem;
+  width: 100%;
+}
+.reviews .review-carousel .review {
+  display: none;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.8s ease-in-out;
+}
+.reviews .review-carousel .review .active {
+  display: block;
+  opacity: 1;
+}
+.reviews .review-carousel .review p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #111825;
+  color: white;
+  width: 900px;
+  position: relative;
+  margin-bottom: 0.5rem;
+}
+.reviews .review-carousel .review small {
+  color: #ffc107;
+  font-size: 26px;
+  display: block;
+  margin-top: 0.5rem;
+}
+.reviews .review-carousel .review span {
+  font-weight: bold;
+  z-index: 1;
+  color: white;
+  margin-top: 1rem;
+}
+.reviews .review-carousel .review.active {
+  display: block;
+  opacity: 1;
+}
+.reviews .review-carousel .btns {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 2rem;
+}
+.reviews .review-carousel .btns button {
+  cursor: pointer;
+  font-size: 1.9rem;
+  font-weight: bold;
+  color: #9cc9e3;
+  background: transparent;
+  border: none;
+  transition: 0.2s ease;
+}
+.reviews .review-carousel .btns button:hover {
+  transform: scale(0.9);
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 3rem;
+}
+.contact .contact-head {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contact .contact-head h1 {
+  color: #159eec;
+  font-size: 20px;
+  font-weight: 600;
+}
+.contact .contact-head span {
+  font-family: var(--logo-font);
+  color: #1f2b6c;
+  font-size: 26px;
+  font-weight: 600;
+}
+.contact .contact-info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.contact .contact-info p {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 1rem;
+  background-color: #bfd2f8;
+  border-radius: 5px;
+  gap: 0.3rem;
+  transition: 0.3s ease;
+}
+.contact .contact-info p span {
+  font-size: 13px;
+}
+.contact .contact-info p small {
+  font-size: 10px;
+}
+.contact .contact-info p i {
+  font-size: 25px;
+}
+.contact .contact-info p:hover {
+  color: white;
+  background-color: #1f2b6c;
+}
+
+.footer {
+  background-color: #1f2b6c;
+  width: 100%;
+  color: white;
+  padding: 3rem 0rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 5rem;
+}
+.footer .first-section {
+  display: flex;
+  gap: 4.5rem;
+}
+.footer .first-section .about {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: flex-start;
+}
+.footer .first-section .about h1 {
+  font-family: var(--logo-font);
+  color: #bfd2f8;
+  font-size: 30px;
+  font-weight: 700;
+}
+.footer .first-section .about span {
+  font-size: 14px;
+  font-weight: 300;
+}
+.footer .first-section .footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.footer .first-section .footer-links h1 {
+  font-size: 17px;
+}
+.footer .first-section .footer-links .link-dir {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+.footer .first-section .footer-links .link-dir a {
+  color: white;
+  text-decoration: none;
+  font-weight: 300;
+  font-size: 13px;
+}
+.footer .first-section .footer-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.footer .first-section .footer-contact h1 {
+  font-size: 17px;
+}
+.footer .first-section .footer-contact .contact-dir {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+.footer .first-section .footer-contact .contact-dir span {
+  font-weight: 300;
+  font-size: 13px;
+}
+.footer .first-section .newsletter {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.footer .first-section .newsletter h1 {
+  font-size: 17px;
+}
+.footer .first-section .newsletter .input-dir {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: #bfd2f8;
+  padding: 0.3rem 0.5rem;
+  border-radius: 5px;
+}
+.footer .first-section .newsletter .input-dir input {
+  background: transparent;
+  padding: 0.5rem 0.5rem 0.5rem 0.1rem;
+  border: none;
+  outline: none;
+}
+.footer .first-section .newsletter .input-dir input::-moz-placeholder {
+  font-size: 12px;
+  color: #1f2b6c;
+  font-family: var(--main-font);
+}
+.footer .first-section .newsletter .input-dir input::placeholder {
+  font-size: 12px;
+  color: #1f2b6c;
+  font-family: var(--main-font);
+}
+.footer .first-section .newsletter .input-dir button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+.footer .first-section .newsletter .input-dir button i {
+  font-size: 16px;
+  color: #1f2b6c;
+}
+.footer .first-section .newsletter #thanksMsg {
+  font-size: 15px;
+  color: rgb(140, 227, 140);
+  font-weight: 400;
+  position: relative;
+  right: -60%;
+  bottom: 1rem;
+  opacity: 0;
+  display: none;
+  width: 220px;
+}
+@keyframes slideIn {
+  to {
+    right: 0;
+    opacity: 1;
+  }
+}
+.footer .line {
+  height: 1px;
+  background-color: #bfd2f8;
+  width: 75%;
+}
+.footer .last-section {
+  display: flex;
+  align-items: center;
+  gap: 33.5rem;
+}
+.footer .last-section span {
+  font-size: 13px;
+  font-weight: 300;
+}
+.footer .last-section .socials {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.footer .last-section .socials i {
+  color: black;
+  background-color: #bfd2f8;
+  border-radius: 50%;
+  padding: 0.4rem 0.4rem;
+  border: none;
+  font-size: 10px;
+}/*# sourceMappingURL=doc.css.map */
