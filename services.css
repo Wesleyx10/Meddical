@@ -491,6 +491,7 @@ h2 span {
     border-radius: 30px;
     opacity: 0;
     transition: opacity 0.4s ease-in-out;
+    bottom: 1.5rem;
   }
   .nav-bar #appointment.show {
     opacity: 1;
