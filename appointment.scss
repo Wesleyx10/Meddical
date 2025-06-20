@@ -720,6 +720,12 @@ body {
     input {
       font-size: 18px;
     }
+    select {
+      font-size: 18px;
+    }
+    option {
+      font-size: 18px;
+    }
   }
   .appt-msg {
     padding: 1rem 0.3rem;
@@ -758,8 +764,8 @@ body {
         .about,
         .newsletter {
           gap: 1rem;
-          .input-dir{
-            input{
+          .input-dir {
+            input {
               font-size: 18px;
             }
           }

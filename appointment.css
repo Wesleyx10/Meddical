@@ -722,6 +722,12 @@ body {
   .booking-form input {
     font-size: 18px;
   }
+  .booking-form select {
+    font-size: 18px;
+  }
+  .booking-form option {
+    font-size: 18px;
+  }
   .appt-msg {
     padding: 1rem 0.3rem;
     font-size: 14px;
