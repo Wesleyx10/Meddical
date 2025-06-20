@@ -552,6 +552,12 @@ h2 span {
   .footer .first-section .newsletter {
     gap: 1rem;
   }
+  .footer .first-section .footer-links .input-dir input,
+  .footer .first-section .footer-contact .input-dir input,
+  .footer .first-section .about .input-dir input,
+  .footer .first-section .newsletter .input-dir input {
+    font-size: 18px;
+  }
   .footer .first-section .footer-contact .contact-dir span {
     text-decoration: none !important;
     -webkit-text-decoration: none !important;

@@ -638,6 +638,9 @@ body {
     -webkit-text-decoration: none !important;
     color: white !important;
   }
+  .footer .first-section .newsletter .input-dir input {
+    font-size: 18px;
+  }
   .footer .line {
     width: 55%;
   }

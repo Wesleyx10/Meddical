@@ -719,6 +719,9 @@ body {
   .booking-form input[type=time]::-webkit-calendar-picker-indicator {
     background-color: #bfd2f8 !important;
   }
+  .booking-form input {
+    font-size: 18px;
+  }
   .appt-msg {
     padding: 1rem 0.3rem;
     font-size: 14px;
@@ -755,6 +758,12 @@ body {
   .other-content .footer .first-section .about,
   .other-content .footer .first-section .newsletter {
     gap: 1rem;
+  }
+  .other-content .footer .first-section .footer-links .input-dir input,
+  .other-content .footer .first-section .footer-contact .input-dir input,
+  .other-content .footer .first-section .about .input-dir input,
+  .other-content .footer .first-section .newsletter .input-dir input {
+    font-size: 18px;
   }
   .other-content .footer .first-section .footer-contact .contact-dir span {
     text-decoration: none !important;

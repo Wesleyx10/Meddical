@@ -557,6 +557,11 @@ h2 {
       .about,
       .newsletter {
         gap: 1rem;
+        .input-dir {
+          input {
+            font-size: 18px;
+          }
+        }
       }
       .footer-contact {
         .contact-dir {

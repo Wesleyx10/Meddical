@@ -800,6 +800,13 @@ body {
     .first-section {
       flex-direction: column;
       gap: 2rem;
+      .newsletter {
+        .input-dir {
+          input {
+            font-size: 18px;
+          }
+        }
+      }
     }
     .line {
       width: 55%;

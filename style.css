@@ -794,6 +794,9 @@ body {
     flex-direction: column;
     gap: 2rem;
   }
+  .footer .first-section .newsletter .input-dir input {
+    font-size: 18px;
+  }
   .footer .line {
     width: 55%;
   }

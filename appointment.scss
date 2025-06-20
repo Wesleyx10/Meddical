@@ -717,6 +717,9 @@ body {
     input[type="time"]::-webkit-calendar-picker-indicator {
       background-color: #bfd2f8 !important;
     }
+    input {
+      font-size: 18px;
+    }
   }
   .appt-msg {
     padding: 1rem 0.3rem;
@@ -755,6 +758,11 @@ body {
         .about,
         .newsletter {
           gap: 1rem;
+          .input-dir{
+            input{
+              font-size: 18px;
+            }
+          }
         }
         .footer-contact {
           .contact-dir {
