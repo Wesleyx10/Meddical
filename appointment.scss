@@ -726,6 +726,12 @@ body {
     option {
       font-size: 18px;
     }
+    #appt-message {
+      font-size: 18px;
+    }
+    #appt-message::placeholder {
+      font-size: 13px;
+    }
   }
   .appt-msg {
     padding: 1rem 0.3rem;
