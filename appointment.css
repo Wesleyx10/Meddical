@@ -713,7 +713,7 @@ body {
     font-size: 28px;
   }
   .booking-form {
-    width: 90vw;
+    width: 350px;
   }
   .booking-form input[type=date]::-webkit-calendar-picker-indicator,
   .booking-form input[type=time]::-webkit-calendar-picker-indicator {
