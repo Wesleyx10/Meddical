@@ -721,21 +721,27 @@ body {
   }
   .booking-form input {
     font-size: 18px;
+    width: 314px;
   }
   .booking-form select {
     font-size: 18px;
+    width: 350px;
   }
   .booking-form option {
     font-size: 18px;
   }
   .booking-form #appt-message {
     font-size: 18px;
+    width: 314px;
   }
   .booking-form #appt-message::-moz-placeholder {
     font-size: 13px;
   }
   .booking-form #appt-message::placeholder {
     font-size: 13px;
+  }
+  .booking-form button {
+    width: 350px;
   }
   .appt-msg {
     padding: 1rem 0.3rem;

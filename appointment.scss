@@ -719,18 +719,24 @@ body {
     }
     input {
       font-size: 18px;
+      width: 314px;
     }
     select {
       font-size: 18px;
+      width: 350px;
     }
     option {
       font-size: 18px;
     }
     #appt-message {
       font-size: 18px;
+      width: 314px;
     }
     #appt-message::placeholder {
       font-size: 13px;
+    }
+    button {
+      width: 350px;
     }
   }
   .appt-msg {
